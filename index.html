@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v[e.g.25.0.0]/dist/font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" type="text/css" href="resourses/src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/fonts/css/all.css">
+    <title>app security || آپ بیمه</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-nav__top">
+            <nav class="first-nav">
+                <ul class="first-nav__item">
+
+                    <li><span class="first-nav__icon"></span> <span>خانه</span></li>
+                    <li><span class="first-nav__icon"></span> <span>بیمه شخص ثالث</span></li>
+                    <li><span class="first-nav__icon"></span> <span>بیمه بدنه</span></li>
+                    <li><span class="first-nav__icon"></span> <span>بیمه اشخاص</span></li>
+                    <li><span class="first-nav__icon"></span> <span>شرکت های بیمه</span></li>
+                </ul>
+                <button class="first-nav__item" id="btn-login" type="button">
+                    <span class="first-nav__icon"></span>ورود/ثبت نام
+                </button>
+            </nav>
+        </div>
+        <div class="header__center">
+            <div class="header__logo"><img id="img-logo" src="./resourses/img/images.svg" /></div>
+        </div>
+        <div class="header-nav__bottom">
+            <nav class="seconde-nav">
+                <li class="seconde-nav__item"><img src="./resourses/img/earthquake.svg" /></li>
+                <li class="seconde-nav__item"><img src="./resourses/img/fire.svg" /></li>
+                <li class="seconde-nav__item"><img src="./resourses/img/motorbike.svg" /></li>
+                <li class="seconde-nav__item"><img id="active" src="./resourses/img/insurance.svg" /></li>
+                <li class="seconde-nav__item"><img src="./resourses/img/fender-bender.svg" /></li>
+                <li class="seconde-nav__item"><img src="./resourses/img/travel-insurance.svg" /></li>
+                <li class="seconde-nav__item"><img src="./resourses/img/person-security.svg" /></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="Thirdparty-section">
+
+            <div class="Thirdparty-section__legend">
+                <div id="legende">
+                    <h1>بیمه شخص ثالث</h1>
+                </div>
+            </div>
+
+            <div class="Thirdparty-section__infos">
+                <div class="bgclr-form">
+                    <form id=Thirdparty-form>
+                        <div class="form-container">
+                            <div class="row">
+                                <button type="button" id="pay-btn">پرداخت اقساط</button></div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="">نوع وسیله نقلیه</label> <select name="cartype" required>
+                                        <option value="" disabled selected>انتخاب برند خودرو</option>
+                                        <option value="savari">سواری</option>
+                                        <option value="vanet">وانت</option>
+                                        <option value="bus">اتوبوس</option>
+                                        <option value="taxi">تاکسی</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <div id="date-damage">
+                                        <div class="date-damage" id="date">
+                                            <label for="">تاریخ سر رسید</label>
+                                            <select name="carbrand" required>
+                                                <option value="" disabled selected>انتخاب تاریخ</option>
+                                            </select>
+                                        </div>
+                                        <div class="date-damage">
+                                            <label>بیمه نامه خسارت</label>
+                                            <label class="switch">
+                                                <input id="input-switch" type="checkbox">
+                                                <span class="slider"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">درصد تخفیف حوادث راننده</label>
+                                    <select name="cartype" required>
+                                        <option value="" disabled selected>تخفیف حوادث راننده</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="">سال ساخت</label>
+                                    <select name="cartype" required>
+                                        <option value="" disabled selected>انتخاب سال ساخت</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">مدل خودرو</label>
+                                    <select name="cartype" required>
+                                        <option value="" disabled selected>انتخاب مدل خودرو</option>
+                                        <option value="savari">سواری</option>
+                                        <option value="vanet">وانت</option>
+                                        <option value="bus">اتوبوس</option>
+                                        <option value="taxi">تاکسی</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">درصد تخفیف بیمه نامه قبلی</label>
+                                    <select name="cartype" required>
+                                        <option value="" disabled selected>تخفیف عدم خسارت</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="inquiry-section">
+            <div class="inquiry-section__title">
+                <div id="inquiry-price">
+                    <h2>استعلام قیمت</h2>
+                </div>
+            </div>
+            <div class="inquiry-section__service">
+                <div class="inquiry-section__container">
+                    <div class="inquiry-section__box">
+                        <img src="./resourses/img/telephone.svg" />
+                        <h4 class="figure-caption">مشاوره تخصصی بیمه</h4>
+                    </div>
+                    <div class="inquiry-section__box">
+                        <img src="./resourses/img/analytics.svg" />
+                        <h4 class="figure-caption">مقایسه قیمت بیمه</h4>
+                    </div>
+                    <div class="inquiry-section__box">
+                        <img src="./resourses/img/Free-delivery.svg" />
+                        <h4 class="figure-caption">ارسال فوری</h4>
+                    </div>
+                    <div class="inquiry-section__box">
+                        <img src="./resourses/img/credit-card.svg" />
+                        <h4 class="figure-caption">خرید سریع و آسان</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reminder-section">
+            <div class="reminder-section__boxtitre">
+                <div class="reminder-section__icon">
+                    <img src="./resourses/img/announceright.png" />
+                </div>
+                <div class="reminder-section__titre">
+                    <h1>یادآور تمدید یا اقساظ انواع بیمه نامه ها</h1>
+                </div>
+                <div class="reminder-section__icon">
+                    <img src="./resourses/img/announceleft.png" />
+                </div>
+
+            </div>
+
+            <form class="reminder-section__form">
+                <select name="cartype" required>
+                    <option value="" disabled selected>نوع بیمه</option>
+                </select>
+                <select name="cartype" required>
+                    <option value="" disabled selected>تاریخ سر رسید</option>
+                </select>
+                <input class="input-form" placeholder="نام و نام خانوادگی" />
+                <input class="input-form" placeholder="شماره موبایل" />
+            </form>
+            <div>
+                <button id="btn-register" type="button">ثبت اطلاعات</button>
+            </div>
+
+        </section>
+
+
+        <section class="article-section">
+            <div class="article-section__box">
+
+                <div class="article-section__item">
+
+                    <div class="article-section__img">
+                        <div class="article-section__img--filter"> <img class="box-section__poster"
+                                src="./resourses/img/elijah.svg" /></div>
+                    </div>
+
+
+                    <div class="article-section__content">
+                        <div class="content-header">
+                            <div><i class="far fa-user"></i></div>
+                            <div>
+                                <time>۰۱/مهر/۱۳۹۹</time>
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                        <div class="content-primary">
+                            <h2><a class="article-section__title" href="#">بیمه آتش سوزی</a></h2>
+                            <p class="article-section__desc"> بیمه ی آتش سوزی یکی از قدیمی ترین رشته های بیمه در
+                                دنیاست.اهمیت این بیمه تا آنجاست در کشور های توسعه یافته تقریبا هیچ دارایی ای ...
+                            </p>
+                        </div>
+
+                        <div class="content__footer">
+                            <span class="read-more">ادامه مطلب</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="article-section__item">
+
+                    <div class="article-section__img">
+                        <div class="article-section__img--filter">
+                            <img class="box-section__poster" src="./resourses/img/elijah.svg" />
+                        </div>
+
+                    </div>
+
+
+                    <div class="article-section__content">
+                        <div class="content-header">
+                            <div><i class="far fa-user"></i></div>
+                            <div>
+                                <time>۰۱/مهر/۱۳۹۹</time>
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                        <div class="content-primary">
+                            <h2><a class="article-section__title" href="#">بیمه آتش سوزی</a></h2>
+                            <p class="article-section__desc"> بیمه ی آتش سوزی یکی از قدیمی ترین رشته های بیمه در
+                                دنیاست.اهمیت این بیمه تا آنجاست در کشور های توسعه یافته تقریبا هیچ دارایی ای ...
+                            </p>
+                        </div>
+
+                        <div class="content__footer">
+                            <span class="read-more">ادامه مطلب</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-section__item">
+
+                    <div class="article-section__img">
+                        <div class="article-section__img--filter"> <img class="box-section__poster"
+                                src="./resourses/img/elijah.svg" /></div>
+                    </div>
+
+
+                    <div class="article-section__content">
+                        <div class="content-header">
+                            <div><i class="far fa-user"></i></div>
+                            <div>
+                                <time>۰۱/مهر/۱۳۹۹</time>
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                        <div class="content-primary">
+                            <h2><a class="article-section__title" href="#">بیمه آتش سوزی</a></h2>
+                            <p class="article-section__desc"> بیمه ی آتش سوزی یکی از قدیمی ترین رشته های بیمه در
+                                دنیاست.اهمیت این بیمه تا آنجاست در کشور های توسعه یافته تقریبا هیچ دارایی ای ...
+                            </p>
+                        </div>
+
+                        <div class="content__footer">
+                            <span class="read-more">ادامه مطلب</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-section__item">
+
+                    <div class="article-section__img">
+                        <div class="article-section__img--filter"> <img class="box-section__poster"
+                                src="./resourses/img/elijah.svg" /></div>
+                    </div>
+
+
+                    <div class="article-section__content">
+                        <div class="content-header">
+                            <div><i class="far fa-user"></i></div>
+                            <div>
+                                <time>۰۱/مهر/۱۳۹۹</time>
+                                <i class="far fa-calendar-alt"></i>
+                            </div>
+                        </div>
+                        <div class="content-primary">
+                            <h2><a class="article-section__title" href="#">بیمه آتش سوزی</a></h2>
+                            <p class="article-section__desc"> بیمه ی آتش سوزی یکی از قدیمی ترین رشته های بیمه در
+                                دنیاست.اهمیت این بیمه تا آنجاست در کشور های توسعه یافته تقریبا هیچ دارایی ای ...
+                            </p>
+                        </div>
+
+                        <div class="content__footer">
+                            <span class="read-more">ادامه مطلب</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="logosbime-section">
+            <div class="logosbime-section__container">
+                <img src="./resourses/img/bimeh-1.svg" /> </div>
+        </section>
+    </main>
+    <footer class="footer-section">
+
+        <div class="footer-section__top">
+            <div class="footer-section__textbox">
+                <div class="footer-section__column">
+                    <h2 class="footer-section__titre">به خانواده آسان پرداخت بیمه بپیوندید.</h2>
+                    <p class="footer-section__subtitre">وب سایت آسان پرداخت بیمه همیشه و در هر جایی در
+                        دسترس است.اطلاعات درخواستی رو تکمیل کن و بلا
+                        فاصله قیمت و شرایط شرکتهای بیمه رو ببین،مـقایسه
+                        کن،مشاوره بگیر و شرکت بیمه ای رو که دوسـت داری
+                        انتخاب کن.تمام شد به همین سادگی . بــــیمه نامه هر
+                        جایی که دوست دارید تقدیم شما میشه</p>
+                </div>
+                <div class="footer-section__column">
+                    <div class="footer-section__logo"><img src="./resourses/img/loginlogobime.svg" /></div>
+                    <address>
+                        تلفن پشتیبانی: 0912-0384356</br>
+                        تلفن دفتر: 013-32130521</br>
+                        امور مالی: 0912-0384356</br>
+                        شماره فکس: 013-32130521</address>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section__bottom">
+            <ul class="footer-section__list">
+                <li class="footer-section__item"><i class="fab fa-youtube"></i></li>
+                <li class="footer-section__item"><i class="fab fa-telegram-plane"></i></li>
+                <li class="footer-section__item"><i class="fab fa-instagram"></i></li>
+            </ul>
+        </div>
+
+    </footer>
+
+</html>

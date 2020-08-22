@@ -1,0 +1,86 @@
+// mixins
+
+// mixins
+@mixin flex($direction, $justify, $align-items) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align-items;
+}
+
+@mixin general($width) {
+  margin: 0 auto;
+  width: $width;
+}
+
+@mixin text-hero($fsize, $talign) {
+  font-size: $fsize;
+  text-align: $talign;
+  line-height: 1.7;
+}
+
+@mixin btn-input($txtclr, $borderclr) {
+  line-height: 44px;
+  display: inline-block;
+  border-radius: 60px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: $txtclr;
+  border: 1px solid $borderclr;
+  cursor: pointer;
+}
+@mixin green-gradient {
+  background: -webkit-linear-gradient(
+    $clr-secondary,
+    $clr-secondary-darken
+  ) !important;
+  background: -moz-linear-gradient(
+    $clr-secondary,
+    $clr-secondary-darken
+  ) !important;
+  background: -ms-linear-gradient(
+    $clr-secondary,
+    $clr-secondary-darken
+  ) !important;
+  background: -o-linear-gradient(
+    $clr-secondary,
+    $clr-secondary-darken
+  ) !important;
+  background: linear-gradient($clr-secondary, $clr-secondary-darken) !important;
+}
+
+@mixin orange-gradient {
+  background: -webkit-linear-gradient($light-orange, $dark-orange) !important;
+  background: -moz-linear-gradient($light-orange, $dark-orange) !important;
+  background: -ms-linear-gradient($light-orange, $dark-orange) !important;
+  background: -o-linear-gradient($light-orange, $dark-orange) !important;
+  background: linear-gradient($light-orange, $dark-orange) !important;
+}
+
+@mixin slateblue-gradient {
+  background: -webkit-linear-gradient(
+    $light-slateblue,
+    $dark-slateblue
+  ) !important;
+  background: -moz-linear-gradient(
+    $light-slateblue,
+    $dark-slateblue
+  ) !important;
+  background: -ms-linear-gradient($light-slateblue, $dark-slateblue) !important;
+  background: -o-linear-gradient($light-slateblue, $dark-slateblue) !important;
+  background: linear-gradient($light-slateblue, $dark-slateblue) !important;
+}
+
+@mixin filter-gradient {
+  background-image: -webkit-linear-gradient(
+    $light-purple,
+    $dark-purple
+  ) !important;
+  background-image: -moz-linear-gradient(
+    $light-purple,
+    $dark-purple
+  ) !important;
+  background-image: -ms-linear-gradient($light-purple, $dark-purple) !important;
+  background-image: -o-linear-gradient($light-purple, $dark-purple) !important;
+  background-image: linear-gradient($light-purple, $dark-purple) !important;
+}

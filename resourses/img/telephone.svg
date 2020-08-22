@@ -1,0 +1,12 @@
+<svg id="telephone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87.5" height="87.5" viewBox="0 0 87.5 87.5">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#54b6f5"/>
+      <stop offset="1" stop-color="#7d5af1"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_47" data-name="Path 47" d="M35.454,199.59,23.13,187.265l7.251-7.252-16.92-16.92L3.291,173.265a11.266,11.266,0,0,0,0,15.915L33.54,219.429a11.267,11.267,0,0,0,15.915,0l10.171-10.171-16.92-16.92ZM23.131,180.014,19.5,183.64l-9.669-9.669,3.626-3.626ZM37.165,215.8,6.916,185.554a6.136,6.136,0,0,1-.647-7.9l38.8,38.8a6.136,6.136,0,0,1-7.9-.647Zm11.584-2.92-9.669-9.669,3.626-3.626,9.669,9.669Z" transform="translate(0 -135.22)" fill="url(#linear-gradient)"/>
+  <path id="Path_48" data-name="Path 48" d="M208.472,141.252v15.382h15.382v-5.127H213.6v-5.127h10.255V131H208.472v5.127h10.255v5.127Z" transform="translate(-172.842 -108.609)" fill="url(#linear-gradient)"/>
+  <path id="Path_49" data-name="Path 49" d="M328.472,131v15.382h10.255v10.255h5.127V131h-5.127v10.255H333.6V131Z" transform="translate(-272.333 -108.608)" fill="url(#linear-gradient)"/>
+  <path id="Path_50" data-name="Path 50" d="M147.6,0a35.217,35.217,0,0,0-32.648,22.006L119.7,23.93A30.084,30.084,0,1,1,158.874,63.1l1.923,4.753A35.212,35.212,0,0,0,147.6,0Z" transform="translate(-95.303)" fill="url(#linear-gradient)"/>
+</svg>

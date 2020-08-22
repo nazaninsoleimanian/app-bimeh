@@ -1,0 +1,12 @@
+//placeholder
+//placeholder
+%seconde-nav__listfont {
+  font-size: 120%;
+  font-weight: 600;
+}
+%firstnav {
+  @include flex(row, space-between, center);
+  padding: 0.5em;
+  margin: 0 auto;
+  max-width: 1160px;
+}
