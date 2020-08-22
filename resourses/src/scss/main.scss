@@ -51,19 +51,26 @@ header {
   height: 20%;
 }
 /*----------SECONDE NAV-----------*/
-.seconde-nav {
+.header-nav__bottom {
+  width: 100%;
+  height: 40vh;
+}
+.seconde-nav__list {
+  position: relative;
   list-style: none;
-  @include flex(row, space-around, center);
-  &__item {
-    display: inline-block;
-    padding: 0;
-    & > img {
-      -webkit-clip-path: circle(42.5% at 50% 50%);
-      clip-path: circle(42.5% at 50% 50%);
-      background-color: white;
-      width: 50%;
-      padding: 2em;
-    }
+  width: 100%;
+  height: 100%;
+}
+.seconde-nav__item {
+  position: absolute;
+  width: 12%;
+  padding: 0;
+
+  & > img {
+    -webkit-clip-path: circle(42.5% at 50% 50%);
+    clip-path: circle(42.5% at 50% 50%);
+    background-color: white;
+    padding: 2em;
   }
 }
 #active {
@@ -78,6 +85,37 @@ header {
   left: 42%;
   top: -84px;
 }
+
+/*----------SECONDE NAV CURVED-----------*/
+.pos-first {
+  top: -12%;
+  left: 88%;
+}
+.pos-sec {
+  top: 2%;
+  left: 74%;
+}
+.pos-third {
+  top: 12%;
+  left: 60%;
+}
+.pos-forth {
+  top: 22%;
+  left: 44%;
+}
+.pos-fifth {
+  top: 12%;
+  left: 30%;
+}
+.pos-sixth {
+  top: 4%;
+  left: 16%;
+}
+.pos-seventh {
+  top: -12%;
+  left: 2%;
+}
+
 /*----------THIRDPARTY SECTION-----------*/
 .Thirdparty-section {
   @include flex(column, center, center);
@@ -88,27 +126,27 @@ header {
   position: absolute;
   top: 124%;
   left: 34%;
-  @include orange-gradient;
   padding: 0.1em 2.5em;
   border-radius: 20px 20px 20px 20px;
+  @include orange-gradient;
 }
 #legende > h1 {
   font-size: 35px;
   word-spacing: 5px;
+  color: white;
 }
 .Thirdparty-section__infos {
   width: 80%;
   display: flex;
   align-items: center;
-  // margin: 0 auto;
 }
 .bgclr-form {
-  border-radius: 20px 20px 20px 20px;
-  background-color: $dark-bg;
-  margin: 0 auto;
   width: 100%;
   height: 50vh;
   padding: 2em;
+  margin: 0 auto;
+  background-color: $dark-bg;
+  border-radius: 20px 20px 20px 20px;
 }
 #Thirdparty-form {
   height: 100%;
@@ -118,6 +156,7 @@ header {
   width: 100%;
   height: 100%;
 }
+
 .row {
   @include flex(row, stretch, center);
   width: 100%;
@@ -125,34 +164,31 @@ header {
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  @include flex(column, stretch, flex-start);
   width: 33%;
 }
 #date-damage {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include flex(row, space-between, stretch);
 }
 .date-damage {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   width: 48%;
 }
 #date {
   flex-grow: 2;
 }
+
 label {
   font-size: 14px;
+  color: white;
 }
 select {
   width: 90%;
   border-radius: 34px;
-  padding: 0.4em;
   border-color: $border-input;
   background-color: $bg-input;
+  padding: 1em;
 }
 
 #pay-btn {
@@ -160,16 +196,13 @@ select {
   @include slateblue-gradient;
 }
 select:required:invalid {
-  color: gray;
+  color: $clr-input;
   font-size: 13px;
-  padding: 1em;
 }
 option[value=""][disabled] {
   display: none;
 }
-option {
-  color: black;
-}
+
 /*----------INPUT SWITCH-----------*/
 .switch {
   position: relative;
@@ -177,7 +210,6 @@ option {
   width: 100px;
   height: 49px;
 }
-
 #input-switch {
   opacity: 0;
   width: 0;
@@ -192,10 +224,8 @@ option {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .slider::before {
   border-radius: 50%;
   position: absolute;
@@ -205,21 +235,15 @@ option {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 #input-switch:checked + .slider {
   background-color: #2196f3;
 }
-
 #input-switch:focus + .slider {
   box-shadow: 0 0 1px #2196f3;
 }
-
 #input-switch:checked + .slider::before {
-  -webkit-transform: translateX(50px);
-  -ms-transform: translateX(50px);
   transform: translateX(50px);
 }
 
@@ -230,87 +254,109 @@ option {
   }
   &__container {
     @include flex(row, space-around, center);
-    border-radius: 20px 20px 20px 20px;
-    margin-top: 4em;
     width: 80%;
+    margin-top: 2em;
     background-color: $lavender;
+    border-radius: 60px;
   }
   &__title {
     @include flex(row, center, center);
-    margin-top: 4em;
+    margin-top: 2em;
   }
   &__box {
     @include flex(column, center, center);
     & > img {
+      width: 50%;
+      padding: 2em;
       -webkit-clip-path: circle(42.5% at 50% 50%);
       clip-path: circle(42.5% at 50% 50%);
       background-color: white;
-      width: 50%;
-      padding: 2em;
     }
   }
 }
 #inquiry-price {
-  @include orange-gradient;
+  border: none;
   border-radius: 34px;
-  & > h2 {
+  @include orange-gradient;
+  & > h3 {
     padding: 0.2em 1em;
     word-spacing: 5px;
-    font-size: 20px;
+    font: {
+      size: 25px;
+      weight: 200;
+    }
+    color: white;
   }
 }
 .figure-caption {
-  color: #000000;
+  color: $body-clr;
   padding: 0.5em 0;
-  font-size: 14px;
+  font: {
+    size: 14px;
+    weight: 200;
+  }
 }
 
 /*----------REMINDER SECTION-----------*/
 
 .reminder-section {
-  @include flex(column, space-evenly, center);
-  background-color: $light-slateblue;
-  border-radius: 20px 20px 20px 20px;
-  margin-top: 4em;
+  @include flex(column, space-around, center);
   width: 80%;
   height: 50vh;
-  &__boxtitre {
+  margin-bottom: 4em;
+  margin-top: 4em;
+  background-color: $light-slateblue;
+  border-radius: 60px;
+  &__boxtitle {
     @include flex(row, space-evenly, center);
     width: 100%;
   }
+  &__title {
+    font: {
+      size: 150%;
+      weight: 200;
+    }
+    padding: 0.3em 5em;
+    background-color: $bg-title;
+    border-radius: 60px;
+    color: white;
+  }
   &__form {
     @include flex(row, space-evenly, center);
-    width: 100%;
+    width: 80%;
   }
 }
 .input-form {
   width: 90%;
-  border-radius: 34px;
-  border: 1px solid $border-input;
   font-size: 13px;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
   padding: 1em;
   background-color: $bg-input;
+  border-radius: 34px;
+  border: 1px solid $border-input;
 }
 #btn-register {
   @include btn-input(white, white);
   @include orange-gradient;
-  word-spacing: 5px;
-  border-width: 3px;
   margin: 2em 0;
+  padding-left: 2em;
+  padding-right: 2em;
+  word-spacing: 5px;
+  border-width: 2px;
 }
 
 /*----------ARTICLE SECTION-----------*/
 
 .article-section {
-  @include flex(column, space-between, center);
+  @include flex(row, space-between, center);
   width: 70%;
   &__box {
-    width: 100%;
     @include flex(row, space-between, center);
+    width: 100%;
   }
   &__item {
     @include flex(column, center, center);
-    margin: 2em 0;
     width: calc(25% - 22px);
   }
   &__img {
@@ -327,7 +373,7 @@ option {
         left: 0;
         top: 0;
         width: 100%;
-        height: 96%;
+        height: 94%;
         display: inline-block;
         @include filter-gradient;
         opacity: 0.5;
@@ -336,81 +382,121 @@ option {
     }
   }
   &__content {
-    @include flex(column, space-between, stretch);
-    position: relative;
+    @include flex(column, space-around, stretch);
+    margin-top: -0.5em;
+    padding: 0.5em 0;
     background: white;
-    padding: 1em 1em 2em;
     box-shadow: 0 4px 5px 1px $box-shadow;
   }
   &__title {
-    font-size: 70%;
-    color: inherit;
+    font-size: 60%;
     &:hover {
       color: lighten($body-clr, 15%);
     }
   }
   &__desc {
-    font-size: 0.6em;
+    font-size: 0.5em;
     line-height: 1.4;
-    margin-top: 0.5em;
+    margin-top: 0.4em;
+    text-align: justify;
   }
 
   &__poster {
     width: 100%;
     height: 100%;
+    display: inline-block;
   }
 }
 .content-header {
-  @include flex(row, space-between, center);
+  @include flex(row, space-around, center);
+  font-size: 60%;
+}
+.content-primary {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 .content__footer {
-  color: $light-slateblue;
-  font-weight: 200;
+  color: $blue;
+  font : {
+    size: 70%;
+    weight: 200;
+  }
   align-self: flex-end;
+  padding-left: 1.5em;
 }
-/*----------ARTICLE SECTION-----------*/
+.read-more {
+  cursor: pointer;
+  &:hover {
+    color: $light-bg;
+  }
+}
+/*----------LOGOSBIME SECTION-----------*/
+.logosbime-section {
+  width: 70%;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  &__container {
+    width: 100%;
+  }
+  &__img {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+/*----------FOOTER SECTION-----------*/
 .footer-section {
   width: 100%;
   height: 90vh;
   &__top {
-    background-color: $light-bg;
     width: 100%;
     height: 75%;
+    background-color: $light-bg;
   }
   &__textbox {
     @include flex(row, flex-start, center);
-    color: white;
     width: 80%;
+    height: 100%;
+    margin-right: 4em;
+    color: white;
   }
-  &__titre {
+  &__title {
     font : {
-      size: 140%;
+      size: 110%;
       weight: 300;
     }
+    padding: 0.3em 1em;
+    margin-bottom: 1.5em;
     background-color: $text-secondary;
-    padding: 0.1em 0.2em;
     border-radius: 60px;
   }
+  &__subtitle {
+    text-align: justify;
+    font-size: 90%;
+  }
   &__column {
-    @include flex(column, flex-start, center);
-    width: 50%;
+    @include flex(column, center, flex-start);
+    width: 35%;
+    height: 100%;
   }
   &__bottom {
-    background-color: $dark-bg;
+    @include flex(row, flex-end, center);
     width: 100%;
     height: 25%;
-    @include flex(row, flex-end, center);
+    background-color: $dark-bg;
   }
   &__list {
     @include flex(row, space-between, center);
     margin-left: 2em;
-    color: white;
     font-size: 240%;
+    color: white;
   }
-
-  &__item {
+  &__logo {
+    display: inline-block;
+    width: 100%;
   }
 }
 address {
   font-style: normal;
+  margin: 2em 3em 0 0;
 }

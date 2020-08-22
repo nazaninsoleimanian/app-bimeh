@@ -15,7 +15,6 @@ main,
 section,
 footer {
   margin: 0 auto;
-  // width: 100%;
 }
 
 ul {
@@ -29,6 +28,12 @@ a {
 li {
   padding: 0.5em;
 }
-button {
+button,
+input,
+select {
   outline: none;
+  cursor: pointer;
+}
+option {
+  color: black;
 }

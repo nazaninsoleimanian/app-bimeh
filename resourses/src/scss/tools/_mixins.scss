@@ -50,11 +50,11 @@
 }
 
 @mixin orange-gradient {
-  background: -webkit-linear-gradient($light-orange, $dark-orange) !important;
-  background: -moz-linear-gradient($light-orange, $dark-orange) !important;
-  background: -ms-linear-gradient($light-orange, $dark-orange) !important;
-  background: -o-linear-gradient($light-orange, $dark-orange) !important;
-  background: linear-gradient($light-orange, $dark-orange) !important;
+  background: -webkit-linear-gradient($dark-orange, $light-orange) !important;
+  background: -moz-linear-gradient($dark-orange, $light-orange) !important;
+  background: -ms-linear-gradient($dark-orange, $light-orange) !important;
+  background: -o-linear-gradient($dark-orange, $light-orange) !important;
+  background: linear-gradient($dark-orange, $light-orange) !important;
 }
 
 @mixin slateblue-gradient {
