@@ -207,17 +207,29 @@ header {
   top: -12%;
   left: 2%; }
 
+/*----------SHAPE BACKGROUND-----------*/
+.shape-bg::after {
+  content: "";
+  background: url(../css/img/shape-1.svg) no-repeat 50%/350px;
+  width: 100%;
+  height: 350%;
+  position: absolute;
+  top: -45%;
+  left: 50%;
+  z-index: 0;
+  opacity: 0.7; }
+
 /*----------THIRDPARTY SECTION-----------*/
 .Thirdparty-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10em; }
+  margin-top: 14em; }
 
 #legende {
   position: absolute;
-  top: 124%;
+  top: 134%;
   left: 34%;
   padding: 0.1em 2.5em;
   border-radius: 20px 20px 20px 20px;
